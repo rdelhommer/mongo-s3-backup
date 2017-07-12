@@ -16,3 +16,5 @@ environment variables:
 * `BACKUP_FILENAME_PREFIX`, optional, defaults to `mongo_backup`
 * `BACKUP_FILENAME_DATE_FORMAT`, optional, defaults to `%Y%m%d`
 * `CRON_SCHEDULE`, optional, defaults to `0 1 * * *`
+* `MONGO_USERNAME`, optional
+* `MONGO_PASSWORD`, optional
