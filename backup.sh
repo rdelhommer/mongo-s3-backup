@@ -12,7 +12,7 @@ OUT=$BACKUP_FILENAME_PREFIX-$(date +$BACKUP_FILENAME_DATE_FORMAT).tgz
 echo "$(get_date) Mongo backup started"
 
 echo "$(get_date) [Step 1/3] Running mongodump"
-if ["${MONGO_USERNAME}" ]; then
+if [ "${MONGO_USERNAME}" ]; then
 	if [ "${MONGO_PASSWORD}" ]; then
 		AUTH_OPTS="-u $MONGO_USERNAME -p $MONGO_PASSWORD"
 	fi
